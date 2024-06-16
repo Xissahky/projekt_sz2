@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab2.MainController" xmlns="http://javafx.com/javafx/17.0.2-ea">
+    <top>
+        <Label text="Choose a Game" styleClass="header-label" BorderPane.alignment="CENTER"/>
+    </top>
+    <center>
+        <VBox alignment="CENTER" spacing="20.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button text="Tic Tac Toe" onAction="#startTicTacToe" styleClass="menu-button"/>
+                <Button text="Battleship" onAction="#startBattleship" styleClass="menu-button"/>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- JDBC Database connection settings -->
+        <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+        <property name="hibernate.connection.url">jdbc:sqlserver://10.200.2.28;databaseName=SZLTECH_w68149;integratedSecurity=false;encrypt=false;trustServerCertificate=true</property>
+        <property name="hibernate.connection.username">stud</property>
+        <property name="hibernate.connection.password">wsiz</property>
+
+        <!-- JDBC connection pool settings -->
+        <property name="hibernate.connection.pool_size">1</property>
+
+        <!-- Select SQL dialect -->
+        <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
+
+        <!-- Echo all executed SQL to stdout -->
+        <property name="hibernate.show_sql">true</property>
+
+        <!-- Update the database schema if needed -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Specify the current session context -->
+        <property name="hibernate.current_session_context_class">thread</property>
+
+        <!-- Connection pool configuration -->
+        <property name="hibernate.dbcp.initialSize">5</property>
+        <property name="hibernate.dbcp.maxTotal">20</property>
+        <property name="hibernate.dbcp.maxIdle">10</property>
+        <property name="hibernate.dbcp.minIdle">5</property>
+        <property name="hibernate.dbcp.maxWaitMillis">-1</property>
+
+        <!-- Entity mapping -->
+        <mapping class="com.example.entity.User"/> <!-- Replace with your actual entity class -->
+
+    </session-factory>
+</hibernate-configuration>

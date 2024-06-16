@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<VBox alignment="CENTER" prefHeight="534.0" prefWidth="437.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab2.RegisterController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <stylesheets>
+        <URL value="@styles.css" />
+    </stylesheets>
+    <children>
+        <Label text="Register" styleClass="header-label"/>
+        <VBox prefHeight="200.0" prefWidth="300.0" spacing="10.0" alignment="CENTER">
+            <children>
+                <Label text="Login:" />
+                <TextField fx:id="loginField" prefHeight="22.0" prefWidth="300.0" />
+                <Label text="Password:" />
+                <PasswordField fx:id="passwordField" prefHeight="22.0" prefWidth="300.0" />
+                <Button text="Register" onAction="#handleRegister" styleClass="login-button"/>
+                <Button text="Back to Login" onAction="#backToLogin" styleClass="login-button"/>
+                <Label fx:id="errorMessage" text="" styleClass="error-message"/>
+            </children>
+        </VBox>
+    </children>
+</VBox>

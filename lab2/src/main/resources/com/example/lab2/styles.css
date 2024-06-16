@@ -1,0 +1,75 @@
+.header-label {
+    -fx-font-size: 24px;
+    -fx-text-fill: #333;
+    -fx-padding: 10 0 20 0;
+}
+
+.login-button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20 10 20;
+}
+
+.login-button:hover {
+    -fx-background-color: #45a049;
+}
+
+.error-message {
+    -fx-text-fill: red;
+    -fx-font-size: 12px;
+}
+
+.header-label {
+    -fx-font-size: 24px;
+    -fx-text-fill: #333;
+    -fx-padding: 20 0 20 0;
+}
+
+.menu-button, .game-button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20 10 20;
+}
+
+.menu-button:hover, .game-button:hover {
+    -fx-background-color: #45a049;
+}
+.header-label {
+    -fx-font-size: 24px;
+    -fx-text-fill: #333;
+    -fx-padding: 20 0 20 0;
+}
+
+.menu-button, .game-button, .login-button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20 10 20;
+}
+
+.menu-button:hover, .game-button:hover, .login-button:hover {
+    -fx-background-color: #45a049;
+}
+
+.game-grid {
+    -fx-padding: 20;
+}
+
+.game-button {
+    -fx-min-width: 60px;
+    -fx-min-height: 60px;
+    -fx-font-size: 24px;
+}
+
+.status-label {
+    -fx-font-size: 18px;
+    -fx-padding: 10 0 10 0;
+    -fx-text-fill: #333;
+}
+
+.error-message {
+    -fx-text-fill: red;
+    -fx-font-size: 14px;
+}
